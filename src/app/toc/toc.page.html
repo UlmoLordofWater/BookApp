@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Table of Contents</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content style="text-align: center;">
+  <!-- <ion-list *ngFor="let chapter of chapters">
+    <ion-item  (click)="selectedIndex = i" routerDirection="root" [routerLink]="['/chapter1']">
+      {{chapter.title}}
+    </ion-item>
+  </ion-list> -->
+
+  <ion-list>
+    <h1>Esther</h1>
+    <ion-item   [routerLink]="['/chapter1']">
+      Chapter 1 
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item  (click)="selectedIndex = i" routerDirection="root" [routerLink]="['/chapter20']">
+      Chapter 2 
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item  (click)="selectedIndex = i" routerDirection="root" [routerLink]="['/chapter30']">
+      Chapter 3
+    </ion-item>
+  </ion-list>
+
+  <br/>
+  <ion-icon style="margin: 1% 80% 1% 10%; position: absolute;" class="back" size="large" name="arrow-back" routerLink="/cover"></ion-icon>
+  <ion-icon style="margin: 1% 10% 1% 80%; position: relative;" class="forward" size="large" name="glasses-outline" routerLink="/chapter1"></ion-icon>
+  
+</ion-content>
